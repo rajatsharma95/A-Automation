@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.btes.battery">
+
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/aa"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/aa"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+        <activity android:name=".HomeActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity">
+        </activity>
+
+
+        <activity android:name=".face_down">
+        </activity>
+        <activity android:name=".Reduce_brightness_night">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+
+
+        <activity android:name=".Switchbox">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+
+        <activity android:name=".BatteryActivity">
+        </activity>
+
+
+        <activity android:name=".Time">
+       <!-- <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>-->
+    </activity>
+
+
+        <activity android:name=".Time_for_night_brightness">
+        </activity>
+
+
+
+
+
+
+        <receiver android:name=".Receiver_time">
+
+            <intent-filter>
+                <action android:name="MyBroadcast">
+                </action>
+            </intent-filter>
+        </receiver>
+
+
+ <!--if i want to run the switchbox first then I will use the line 21 to line 25-->
+       <!-- <activity android:namBatteryActivity11hbox"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
+
+
+
+
+
+    </application>
+
+
+</manifest>
